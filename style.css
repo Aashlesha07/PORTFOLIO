@@ -1,0 +1,143 @@
+
+.first{
+    padding-top: 204px;
+    color: black;
+    font-family: 'Aladin', cursive;
+}
+.welecome{
+    font-size: 46px;
+    
+}
+.its-about-me{
+    padding: 0px 20px;
+}
+.aboutme{
+    position: absolute;
+    
+}
+.me{
+    position: relative;
+    padding-top: 60px;
+    font-size: 22px;
+}
+.PROFESSION{
+    opacity: 0.3;
+    padding-top: 196px;
+    font-size: 101px;
+    font-family: 'Aladin', cursive;
+}
+.myproject{
+    height: 100vh;
+}
+.background{
+    background-image: url("img/working_girl.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 500px;
+    height: 500px;
+}
+.ab{
+    opacity: 0.2;
+    padding-top: 18px;
+    font-size: 123px;
+    font-family: 'Aladin', cursive;
+}
+.wg{
+    margin-top: 66px;
+    margin-left: 70px;
+}
+.mobile{
+    margin-top: 177px;
+}
+.mp{
+    margin-top: 20px;
+    opacity: 0.3;
+    padding-top: 196px;
+    font-size: 101px;
+    font-family: 'Aladin', cursive;
+}
+.html{
+    margin-top: 124px;
+    margin-bottom:-36 px;
+    position: absolute;
+}
+.mysql{
+    margin-left: 186px;
+    margin-top: -5px;
+    position: absolute;
+}
+.bootstrap{
+    margin-left: 82px;
+    margin-top: 50px;
+    position: absolute;
+}
+.javascript{
+    margin-left: 339px;
+    margin-top: 134px;
+    position: absolute;
+}
+.css{
+    margin-left: 271px;
+    margin-top: 56px;
+    position: absolute;
+}
+.cm{
+    font-size: 80px;
+    font-family: 'Aladin', cursive;
+}
+buttonabout{
+    transform: scale(1.05);
+    
+}
+.site-navigation ul,   
+.site-navigation li
+{
+    margin: 0;  
+    padding-right: 15px;  
+    padding-top: 4px;
+    display: flex;
+    justify-content: end;
+    background-color: transparent;
+    font-weight: 900;
+    font-size: 15px;
+    color: #000;
+
+}
+.site-navigation li
+{
+    display: inline-block;  
+    margin: 1.4em 1em 2em 1em;  
+    background-color: transparent;
+    opacity: 0.6s;
+    color: #000;
+
+}
+.site-identity
+{
+    position: absolute; 
+    top: 0px; 
+    /* background: rgba(249, 247, 247, 0.503); */
+    color: rgb(12, 12, 12); 
+    width: 100%;
+
+}
+.logo{
+    
+    position:absolute;
+    top:0;
+    background: rgba(249, 247, 247, 0.503); 
+    width:100%;
+    cursor: pointer;
+    
+}
+a{
+    color: black;
+    cursor: pointer;
+}
+.home{
+    margin-top: 99px;
+}
+
+   
+
