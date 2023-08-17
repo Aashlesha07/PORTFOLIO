@@ -1,6 +1,6 @@
 
 .first{
-    padding-top: 204px;
+    padding-top: 160px;
     color: black;
     font-family: 'Aladin', cursive;
 }
@@ -20,15 +20,56 @@
     padding-top: 60px;
     font-size: 22px;
 }
+.skilltable{
+    font-family: Roboto;
+    display: flex;
+    margin: 20px 0 10px;
+}
+.skillname{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500px;
+    cursor: pointer;
+    position: relative;
+}
+.skillname::after{
+    content:'';
+    width: 0;
+    height: 3px;
+    background-color: gray;
+    position: absolute;
+    left:0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+.skillname.skillactive::after{
+    width: 50%;
+}
+.tableeducation ul li{
+    list-style: none;
+    margin: 10px 0;
+}
+.tableed{
+    padding-left: 0;
+    font-size: 14px;
+}
+.tableeducation ul li span{
+    color: lightslategray ;
+    font-size: 14px;
+}
+.tableeducation{
+    display: none;
+}
+.tableeducation.ted{
+    display: block;
+}
 .PROFESSION{
     opacity: 0.3;
     padding-top: 196px;
-    font-size: 101px;
+    font-size: 66px;
     font-family: 'Aladin', cursive;
 }
-.myproject{
-    height: 100vh;
-}
+
 .background{
     background-image: url("img/working_girl.jpg");
     background-position: center;
@@ -45,17 +86,70 @@
 }
 .wg{
     margin-top: 66px;
-    margin-left: 70px;
+   
 }
 .mobile{
     margin-top: 177px;
 }
 .mp{
-    margin-top: 20px;
     opacity: 0.3;
-    padding-top: 196px;
-    font-size: 101px;
+    font-size: 75px;
     font-family: 'Aladin', cursive;
+}
+.work-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.work{
+    border-radius:10px;
+    position: relative;
+    overflow: hidden;   
+}
+.work img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+}
+.layer{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0),gray);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 14px;
+}
+.layer h3{
+    font-weight: 500;
+}
+.layer a{
+    margin-top: 20px;
+    color: gray;
+    text-decoration: none;
+    font-size:18px ;
+    line-height: 60px;
+    background: #fff;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+
+}
+.f1{
+    margin-top: 8px;
+}
+.fh3{
+   font-size: 17px; 
 }
 .html{
     margin-top: 124px;
@@ -83,7 +177,7 @@
     position: absolute;
 }
 .cm{
-    font-size: 80px;
+    font-size: 60px;
     font-family: 'Aladin', cursive;
 }
 buttonabout{
@@ -135,9 +229,178 @@ a{
     color: black;
     cursor: pointer;
 }
-.home{
-    margin-top: 99px;
+.github{
+    color: white;
+    text-decoration: none;
+}
+.form-type,.message
+{
+    position: relative;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3px;
+    width: 75%;
+    height: 100%;
+    background: transparent;
+    color: whitesmoke;
+    font-size: 1.5rem;
+    border: 1px solid whitesmoke;
+    border-radius: 10px;
+
+}
+.full{
+    font-weight: bold;
+    font-family: Roboto;
+}
+.submit{
+    margin-left: 192px;
+}
+.carousel-item::before{
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background:#000;
+    opacity: 0.3;
+}
+.pr{
+    margin-top: 80px;
+}
+.prbtn{
+    margin-bottom: 113px;
+}
+.unbox{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 30px;
+    position: relative;
+ /* transform: skewX(15deg); */
+}
+.uili{
+    position: relative;
+    list-style: none;
+    width: 350px;
+    padding: 30px;
+    background: #3e3f46;
+    transition: 0.5s;
+    z-index: calc(1*var(--i));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100%;
+
+}
+.uili:hover{
+    transform: translateX(80px);
+    background: var(--clr);
+}
+.uili::before{
+    content: '';
+    position:absolute;
+    top: 0;
+    right: -40px;
+    width: 70px;
+    height: 100%;
+    background: #3e3f46;
+    filter:brightness(0.7);
+    transform-origin: right;
+    transform: skewY(180deg);
+    transition: 0.5s;
+}
+.uili:hover::before{
+    background: var(--clr);
+    filter: brightness(0.7);
+
+}
+/* .uili::after{
+    content: '';
+    position: absolute;
+    top: -40px;
+    right: 0;
+    width: 100%;
+    height: 40px;
+    background: #3e3f46;
+    filter:brightness(0.9);
+    transform-origin: bottom;
+    transform: skewX(90deg);
+} */
+.uili a{
+    text-decoration: none;
+    color: #999;
+    display: block;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+}
+.uili:hover a{
+    color: whitesmoke;
+}
+.uili:last-child::after{
+    box-shadow: -120px 120px 20px rgba(0,0,0,0.25);
+}
+.uili span{
+    position:absolute;
+    top: 0;
+    right: -40px;
+    width: 67px;
+    height: 100%;
+    transform-origin: right;
+    transform: skewY(180deg);
+    display: flex;
+    transition: 0.5s;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.5;
+    font-size: 1.25em;
+}
+.uili:hover span{
+    opacity: 1;
+}
+.form .inputbx{
+   margin-bottom: 40px; 
+}
+.form .inputbx input{
+    width: 100%;
+    background: transparent;
+    box-shadow: none;
+    border: none;
+    outline: none;
+    padding: 10px 0;
+    font-size: 18px;
+    font-weight: 300;
+    color: #fff;
+    border-bottom: 2px solid #fff;
+}
+.form .inputbx input::placeholder{
+    color: #fff;
+}
+.form .inputbx textarea{
+    width: 100%;
+    background: transparent;
+    box-shadow: none;
+    border: none;
+    outline: none;
+    padding: 10px 0;
+    font-size: 18px;
+    font-weight: 300;
+    min-height: 150px;
+    color: #fff;
+    border-bottom: 2px solid #fff;
+}
+.form .inputbx textarea::placeholder{
+    color: #fff;
+}
+.form .inputbx input[type="submit"]{
+    width: 150px;
+    background: #fff;
+    color: #111;
 }
 
-   
+
+
 
