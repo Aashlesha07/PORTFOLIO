@@ -1,16 +1,16 @@
-var tableskill = document.getElementsByClassName("skillname");
-var educationtable = document.getElementsByClassName("tableeducation");
+// var tableskill = document.getElementsByClassName("skillname");
+// var educationtable = document.getElementsByClassName("tableeducation");
 
-function opentab(tabname){
-    for(tableskill of tableskill){
-        tableskill.classList.remove("skillactive");
-    }
-    for(educationtable of educationtable){
-        educationtable.classList.remove("ted");
-    }
-    event.currentTarget.classList.add("skillactive");
-    document.getElementById(tabname).classList.add("ted");
-}
+// function opentab(tabname){
+//     for(tableskill of tableskill){
+//         tableskill.classList.remove("skillactive");
+//     }
+//     for(educationtable of educationtable){
+//         educationtable.classList.remove("ted");
+//     }
+//     event.currentTarget.classList.add("skillactive");
+//     document.getElementById(tabname).classList.add("ted");
+// }
 
 function sendMail(){
     (function(){
