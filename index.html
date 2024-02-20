@@ -13,6 +13,7 @@
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="style.css">
+  <link rel="manifest" href="manifest.json">
   <script type="text/javascript">
     (function(){
       emailjs.init("I0KjoTLZEbzVf2V-4")
@@ -66,6 +67,7 @@
             <h1 class="welecome" data-aos="fade-right" data-aos-duration="1000">WELCOME</h1>
             <h2 data-aos="fade-right" data-aos-duration="1500"> I AM AASHLESHA KHARUNKAR </h2>
             <h4 data-aos="fade-right" data-aos-duration="2000"><b>FULLSTACK DEVELOPER</b></h4>
+            <a href="Aashleshakharunkar dec 2023.pdf" target="/blank" class="btn">Resume</a>
           </div>
         </div>
         <div class=" col-lg-6 ">
@@ -204,5 +206,25 @@
   <script>
     AOS.init();
   </script>
+      <script src="serviceworker.js"></script>
+      <script>
+          window.addEventListener('load', () => {
+          registerSW();
+      });
+  
+      // Register the Service Worker
+      async function registerSW() {
+          if ('serviceWorker' in navigator) {
+              try {
+                  await navigator
+                      .serviceWorker
+                      .register('serviceworker.js');
+              }
+              catch (e) {
+                  console.log('SW registration failed');
+              }
+          }
+      }
+      </script>
 </body>
 </html>
