@@ -660,14 +660,15 @@ a{
     .mobile-myprojectcarousel {
         display: flex;
         position: absolute;
-        margin-top: -726px;
+        margin-top: -660px;
         margin-left: 85px;
-        height: 700px;
-        width: 325px;
+        height: 644px;
+        width: 289px;
     }
     .mobile-vedioplay{
-        height: 639px;
+        height: 565px;
         border-radius: 25px 60px 0px 0px;
+        
     }
 }
 
