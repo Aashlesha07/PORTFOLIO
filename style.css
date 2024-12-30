@@ -71,7 +71,7 @@
 }
 .PROFESSION{
     opacity: 0.3;
-    padding-top: 196px;
+    padding-top: 20px;
     font-size: 66px;
     font-family: 'Aladin', cursive;
 }
@@ -616,13 +616,20 @@ a{
 }
 .mobile-project {
     display: none;
+    position: relative;
+    height: 75vh;
 }
 
 .vedioplay {
     height: 296px;
     width: 674px;
 }
-
+.mobile-vedioplay{
+    display: none;
+    height: 339px;
+    border-radius: 20px 20px 0px 0px;
+    
+}
 .myprojectcarousel {
     position: absolute;
     margin-top: -416px;
@@ -632,21 +639,34 @@ a{
 }
 .mobile-myprojectcarousel{
     display: none;
+    position: absolute;
+    margin-top: -425px;
+    margin-left: 459px;
+    height: 346px;
+    width: 193px;
 }
 
 /* Styles for smaller screens */
 @media screen and (max-width: 768px) {
     .laptop {
         display: none;
+        height: 200px; /* Adjust size for mobile */
+        width: 360px; /* Mobile frame width */
+        margin: 0 auto; /* Center the image */
     }
 
     .vedioplay {
+        display: none;
         height: 150px; /* Adjust video size */
         width: 320px;
     }
 
     .myprojectcarousel {
         display: none;
+        margin-top: -200px;
+        margin-left: 0;
+        width: 320px;
+        height: 150px;
     }
 
     .text-center {
@@ -657,18 +677,19 @@ a{
         position: relative;
         height: 75vh;
     }
-    .mobile-myprojectcarousel {
+    .mobile-vedioplay{
+        display: flex;
+        height: 643px;
+        border-radius: 20px 108px 0px 0px;
+        
+    }
+    .mobile-myprojectcarousel{
         display: flex;
         position: absolute;
-        margin-top: -660px;
-        margin-left: 85px;
-        height: 644px;
-        width: 289px;
-    }
-    .mobile-vedioplay{
-        height: 565px;
-        border-radius: 25px 60px 0px 0px;
-        
+        margin-top: -727px;
+        margin-left: 93px;
+        height: 694px;
+        width: 316px;
     }
 }
 
