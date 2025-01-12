@@ -1,0 +1,16 @@
+{
+    "name" : "progressive web application",
+    "short_name" : "pwa",
+    "start_url" : "index.html",
+    "display" : "standalone",
+    "background_color" : "black",
+    "scope" : ".",
+    "description" : "this is pwa tutorial",
+    "icons" : [
+        {
+            "src" : "img/icon.png",
+            "sizes" : "192X192",
+            "type" : "image/png"
+        }
+    ] 
+}
